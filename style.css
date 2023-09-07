@@ -39,19 +39,21 @@ article > *{
     text-align: center;
 }
 
-article > a {
+article > div {
     cursor: pointer;
     margin-top: 1rem;
     text-decoration: none;
     font-weight: 500;
     color: white;
     background: rgb(192, 192, 193);
-
-
-}
-/* button{
-    background: rgb(192, 192, 193);
-    color: white;
-    font-weight: 500;
     text-decoration: none;
-} */
+}
+a:link {
+    text-decoration: none;
+    color: black;
+
+  }
+  a:visited {
+    color: black;
+  }
+  
