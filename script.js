@@ -2,9 +2,16 @@
 const today = new Date().toLocaleDateString("en-EN", { weekday: "long" });
 console.log(today);
 const dayOfTheWeek = document.getElementById("dayOfTheWeek");
-dayOfTheWeek.innerHTML = `Today is ${today}`;
+dayOfTheWeek.innerHTML = today;
 
 //UTC TIME
-const time = new Date().getTime();
-const UTCTime = document.getElementById("UTCTime");
-UTCTime.innerHTML = `The current UTC Time in milliseconds: ${time}ms`;
+
+function currentUpdatedTime() {
+  const time = new Date();
+  const UTCTimeInMilliseconds = time.getTime();
+  const UTCTime = document.getElementById("UTCTime");
+  UTCTime.innerHTML = UTCTimeInMilliseconds;
+}
+currentUpdatedTime();
+setInterval(currentUpdatedTime, 1000);
+

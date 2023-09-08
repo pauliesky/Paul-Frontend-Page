@@ -50,10 +50,12 @@ article > div {
 }
 a:link {
     text-decoration: none;
-    color: black;
+    color: rgb(54, 54, 214);
 
   }
   a:visited {
-    color: black;
+    color: rgb(54, 54, 214);
+   
+   
   }
   
