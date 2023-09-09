@@ -1,6 +1,5 @@
 //DAY OF THE WEEK
 const today = new Date().toLocaleDateString("en-EN", { weekday: "long" });
-console.log(today);
 const dayOfTheWeek = document.getElementById("dayOfTheWeek");
 dayOfTheWeek.innerHTML = today;
 
